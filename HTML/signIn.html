@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập</title>
+    <!-- <link rel="stylesheet" href="../CSS/reset.css" /> -->
+    <link rel="stylesheet" href="../CSS/signIn.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="right">
+        <img
+          src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg"
+          alt=""
+        />
+        <h4>
+          Facebook giúp bạn kết nối và chia sẻ với mọi người trong cuộc sống của
+          bạn.
+        </h4>
+      </div>
+      <div class="left">
+        <div class="login">
+          <input type="text" placeholder="Email hoặc số điện thoại" />
+          <input type="text" placeholder="Mật khẩu" />
+          <div class="login-button">
+            <button class="login-button-1">
+              <b style="color: white">Đăng nhập</b>
+            </button>
+            <a
+              href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0"
+              >Quên mật khẩu?</a
+            >
+            <hr />
+            <button class="login-button-2">
+              <b style="color: white">Tạo tài khoản mới</b>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"
+    ></script>
+
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"
+    ></script>
+
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"
+    ></script>
+    <script type="module" defer src="../JAVASCRIPT/signIn.js"></script>
+  </body>
+</html>
