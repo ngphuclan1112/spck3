@@ -1,15 +1,15 @@
-var docRef = db.collection("users");
+import { db } from "./config.js";
+const loginButton = document.querySelector(".login-button-1");
+const username = document.querySelector(".username");
+const password = document.querySelector(".password");
 
-docRef
-  .get()
-  .then((doc) => {
-    if (doc.exists) {
-      console.log("Document data:", doc.data());
-    } else {
-      // doc.data() will be undefined in this case
-      console.log("No such document!");
-    }
-  })
-  .catch((error) => {
-    console.log("Error getting document:", error);
-  });
+loginButton.addEventListener("click", () => {
+  db.collection("users")
+    .get()
+    .then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+        console.log(doc.data().passWord);
+        console.log(doc.data().phoneNumber);
+      });
+    });
+});

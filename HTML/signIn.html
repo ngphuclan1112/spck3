@@ -25,8 +25,12 @@
       </div>
       <div class="left">
         <div class="login">
-          <input type="text" placeholder="Email hoặc số điện thoại" />
-          <input type="text" placeholder="Mật khẩu" />
+          <input
+            class="username"
+            type="text"
+            placeholder="Email hoặc số điện thoại"
+          />
+          <input class="password" type="text" placeholder="Mật khẩu" />
           <div class="login-button">
             <button class="login-button-1">
               <b style="color: white">Đăng nhập</b>
@@ -43,28 +47,11 @@
         </div>
       </div>
     </div>
-    <script
-      defer
-      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"
-    ></script>
 
-    <script
-      defer
-      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"
-    ></script>
-    <script
-      defer
-      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"
-    ></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore-compat.js"></script>
 
-    <script
-      defer
-      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"
-    ></script>
-    <script
-      defer
-      src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"
-    ></script>
+    <script defer type="module" src="../JAVASCRIPT/config.js"></script>
     <script type="module" defer src="../JAVASCRIPT/signIn.js"></script>
   </body>
 </html>

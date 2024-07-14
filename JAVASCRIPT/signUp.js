@@ -25,6 +25,7 @@ signupButton.addEventListener("click", async (e) => {
     showErr.textContent = "Thiếu dữ liệu";
   } else {
     db.collection("users")
+      .doc("SF")
       .add({
         surName: surName,
         lastName: lastName,
